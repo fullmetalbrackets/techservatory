@@ -1,7 +1,12 @@
 {
   "name": "techservatory",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "homepage": "https://techservatory.com",
+  "description": "A place to dump my documentation, how-to guides, helpful links, random notes and other data I want to hoard -- and also share.",
+  "author": "Ariel Diaz",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
