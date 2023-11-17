@@ -1,16 +1,123 @@
 ---
+import BaseHead from "@components/BaseHead.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "@components/FormattedDate.astro";
 
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const wikis = (await getCollection("wiki"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const links = (await getCollection("links"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <style scoped>
+    hr {
+      margin-bottom: 2em;
+    }
+    .latest {
+      font-size: 36px;
+      margin-top: 2em;
+    }
+    ul {
+      list-style-type: none;
+      margin-left: -2em;
+    }
+    li {
+      font-size: 85%;
+      margin-bottom: 2em;
+    }
+    li .date {
+      color: rgb(var(--gray));
+      margin-bottom: 0.5em;
+    }
+    li h4 {
+      color: var(--accent);
+    }
+    li:hover h4 {
+      text-decoration: underline;
+    }
+    li a,
+    li a:hover {
+      color: var(--black);
+      text-decoration: none;
+    }
+  </style>
+
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>Hello World.</h1>
+      <hr />
+      <p>
+        Welcome to some site I made. For now it's just mirroring <a
+          href="https://arieldiaz.codes"
+          target="_blank">my blog</a
+        >. Someday soon I may add some more things I have in mind.
+      </p>
+      <h2 class="latest">Latest Blog Posts</h2>
+      <ul>
+        {
+          posts.map((post) => (
+            <li>
+              <a href={`/blog/${post.slug}/`}>
+                <p class="date">
+                  <FormattedDate date={post.data.pubDate} />
+                </p>
+                <h4 class="title">{post.data.title}</h4>
+                <span>{post.data.description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <h2 class="latest">Latest Wiki Articles</h2>
+      <ul>
+        {
+          wikis.map((wiki) => (
+            <li>
+              <a href={`/wiki/${wiki.slug}/`}>
+                <p class="date">
+                  <FormattedDate date={wiki.data.pubDate} />
+                </p>
+                <h4 class="title">{wiki.data.title}</h4>
+                <span>{wiki.data.description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <h2 class="latest">Latest Added Links</h2>
+      <ul>
+        {
+          links.slice(0, 3).map((link) => (
+            <li>
+              <p class="date">
+                <FormattedDate date={link.data.pubDate} />
+              </p>
+              <h4 class="title">
+                <a href={link.data.url} target="_blank">
+                  {link.data.title}
+                </a>
+              </h4>
+              <span>{link.data.description}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+    <Footer />
+  </body>
 </html>
