@@ -14,16 +14,10 @@ const { title, description, pubDate, updatedDate } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
     <style>
-      main {
-        width: calc(100% - 2em);
-        max-width: 100%;
-        margin: 0 auto;
-      }
       hr {
         margin-bottom: 2em;
       }
       .prose {
-        width: 720px;
         color: rgb(var(--gray-dark));
         margin: 0 auto;
       }
