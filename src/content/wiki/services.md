@@ -7,37 +7,38 @@ tags:
   - Self-Hosting
 ---
 
-## Apollo
+# Korben
 
-##### Bare Metal
+##### Operating System
 
-- OpenMediaVault 6 (OS) -- `omv.home.arpa`
+- Debian 12 Bookworm
 
 ##### Docker Containers
 
-- Pi-Hole -- `apollo.home.arpa`
-- Portainer -- `docker.home.arpa`
-- Homarr -- `dash.home.arpa`
 - Plex -- `plex.home.arpa`
 - Tautulli -- `stats.home.arpa`
 - Kavita -- `books.home.arpa`
 - Navidrome -- `music.home.arpa`
 - Photoprism -- `photos.home.arpa`
 - qBittorrent -- `qb.home.arpa`
-- File Browser -- `file.home.arpa`
 - Paperless-ngx -- `paper.home.arpa`
 - Speedtest Tracker -- `speed.home.arpa`
 - Twingate Connector
 
-## Potato
+<br>
 
-#### Bare Metal
+# Potato
 
-- Debian 12 Bookworm (OS)
+##### Operating System
+
+- Debian 12 Bookworm
+
+##### Baremetal
+
 - Pi-Hole -- `potato.home.arpa`
 
-#### Docker Containers
+##### Docker Containers
 
 - Uptime Kuma -- `uptime.home.arpa`
 - Nginx Proxy Manager -- `proxy.home.arpa`
-- Nginx + Cloudflare Tunnel (for <a href="https://bleh.cc" target="_blank">bleh.cc</a>)
+- Nginx + Cloudflare Tunnel (this website)

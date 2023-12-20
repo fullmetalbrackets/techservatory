@@ -6,7 +6,7 @@ tags:
   - Homelab
 ---
 
-### Inventory
+## Inventory
 
 1. [Apollo](#apollo)
 2. [Potato](#potato)
@@ -17,107 +17,133 @@ tags:
 7. [Weasley](#weasley)
 8. [Hightower](#hightower)
 
-<div id='apollo'/>
-
-### Apollo
-
-##### Dell Optiplex 3050 SFF
-
-###### IP: <em>192.168.0.100</em>
-
-- 16 GB RAM
-- 250 GB NVMe SSD (Boot)
-- 2 TB 3.5" HDD
-- 2 x 1 TB 2.5" HDDs
-- 1 Gbps Ethernet
-- 16W - 22W Power Consumption
-
-<div id='potato'/>
-
-### Potato
-
-##### Libre Sweet Potato SBC
-
-###### IP: <em>192.168.0.200</em>
-
-- 2 GB RAM
-- 32 GB USB Drive (boot)
-- 100 Mbps Ethernet
-- 2W - 4W Power Consumption
-
-<div id='other'/>
-
-### Other
-
-- TP-Link AX3000 Router (<em>192.168.0.1</em>)
-- Netgear 8-port Managed Switch (<em>192.168.0.2</em>)
-- Shelly Plug US (<em>192.168.0.150</em>)
-
-<hr>
-
-The below machines are not currently in use.
+<br>
 
 <div id='korben'/>
 
-### Korben
+## Korben
 
-##### Dell Optiplex 3020 Micro
+### Dell Optiplex 3020 Micro
 
-###### IP: <em>192.168.0.225</em>
+**IP:** 192.168.0.225
 
 - 4 GB RAM
-- 320 GB 2.5" HDD (Boot)
-- 500 GB 2.5" HDD
-- 750 GB 2.5" HDD
+- Internal 320 GB 2.5" HDD (boot)
+- External 2 TB 3.5" HDD (media storage)
+- External 1 TB 2.5" HDD (documents, container files, etc.)
 - 1 Gbps Ethernet
 - 10W - 16W Power Consumption
 
+<br>
+
+<div id='potato'/>
+
+## Potato
+
+### Libre Sweet Potato SBC
+
+**IP:** 192.168.0.200
+
+- 2 GB RAM
+- 32 GB USB Drive (boot)
+- 128GB USB Drive (storage)
+- 100 Mbps Ethernet
+- 2W - 5W Power Consumption
+
+<br>
+
+<hr>
+
+<br>
+
+<div id='other'/>
+
+## Other Network Devices
+
+<br>
+
+##### TP-Link AX3000 Router
+
+**IP:** 192.168.0.1
+
+##### Netgear 8-port Managed Switch
+
+**IP:** 192.168.0.2
+
+##### Shelly Plug US
+
+**IP:** 192.168.0.150
+
+<br>
+
+<hr>
+
+<br>
+
+The below machines are not currently in use.
+
+<div id='apollo'/>
+
+## Apollo
+
+### Dell Optiplex 3050 SFF
+
+**IP:** 192.168.0.100
+
+- 16 GB RAM
+- 250 GB NVMe SSD (boot)
+- 1 TB 3.5" HDD (storage)
+- 1 Gbps Ethernet
+- 16W - 22W Power Consumption
+
+<br>
+
 <div id='headless'/>
 
-### Headless
+## Headless
 
-##### HP Pavilion g7
+### HP Pavilion g7
 
-###### IP: <em>192.168.0.175</em>
+**IP:** 192.168.0.175
 
 - 8 GB RAM
 - 120 GB 2.5" HDD
 - 100 Mbps Ethernet
 - 15W - 25W Power Consumption
 
+<br>
+
 <div id='worf'/>
 
-### Worf
+## Worf
 
-##### HP Compaq 6910p
-
-###### IP: <em>192.168.0.120 (?)</em>
+### HP Compaq 6910p
 
 - 8GB RAM
 - 120GB 2.5" HDD
 - 1 Gbps Ethernet
 - 18W - 28W Power Consumption
 
+<br>
+
 <div id='weasley'/>
 
-### Weasley
+## Weasley
 
-##### Dell Studio 1535
-
-###### IP: <em>192.168.0.180 (?)</em>
+### Dell Studio 1535
 
 - 8 GB RM
 - 120 GB 2.5" HDD Boot Drive
 - 1 Gbps Ethernet
 - 30W - 40W Power Consumption
 
+<br>
+
 <div id='hightower'/>
 
-### Hightower
+## Hightower
 
-##### Dell Dimension E150
-
-###### IP: <em>192.168.0.???</em>
+### Dell Dimension E150
 
 - 6 GB RAM (one broken?)
 - 80 GB 3.5" HDD
