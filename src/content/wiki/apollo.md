@@ -13,3 +13,8 @@ tags:
 - 1 TB 2.5" Internal HDD
 - 1 Gbps Ethernet
 - HDMI Port
+
+![Dell Optiplex 3050 SFF](/img/wiki/optiplex3050sff.jpg)
+
+<br>
+<br>

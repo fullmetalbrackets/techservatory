@@ -4,7 +4,7 @@ const today = new Date();
 
 <hr />
 <footer>
-  <span>
+  <span class="cr">
     &copy; {today.getFullYear()}
     <a href="mailto:contact@techservatory.com">Ariel Diaz</a>
   </span>
@@ -36,7 +36,7 @@ const today = new Date();
   }
   footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     font-size: 0.7em;
@@ -45,9 +45,13 @@ const today = new Date();
     color: rgb(var(--gray));
     text-align: center;
   }
+  .cr {
+    padding-right: 2em;
+  }
   .gh {
     margin: 0;
     padding: 0;
+    padding-right: 2em;
   }
   .gh a:hover {
     color: rgb(var(--gray));
