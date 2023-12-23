@@ -8,8 +8,10 @@ tags:
 
 ## Libre Sweet Potato
 
+- 1.4 GHz CPU
+- 2 GB RAM
 - 32 GB USB Drive (boot drive)
-- 128 GB USB Drive (extra storage & network share)
+- 64 GB USB Drive (extra storage & network share)
 - 100 Mbps Ethernet
 
 ![Libre Sweet Potato](/img/wiki/sweet-potato.jpg)

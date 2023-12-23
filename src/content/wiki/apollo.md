@@ -8,9 +8,10 @@ tags:
 
 ## Dell Optiplex 3050 SFF
 
-- 256 GB NVMe SSD (Boot drive)
+- Debian 12 Bookworm
+- Intel i5-6500 @ 3.20 GHz
+- 256 GB NVMe SSD (boot drive)
 - 1 TB 3.5" Internal HDD
-- 1 TB 2.5" Internal HDD
 - 1 Gbps Ethernet
 - HDMI Port
 

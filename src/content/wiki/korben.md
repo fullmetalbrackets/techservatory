@@ -8,6 +8,8 @@ tags:
 
 ## Dell Optiplex 3020 Micro
 
+- Debian 12 Bookworm
+- Intel i5-6500 @ 3.20 GHz
 - 120 GB 2.5" Internal HDD (boot drive)
 - 2 TB 3.5" External HDD (large media storage)
 - 1 TB 2.5" External HDD (documents, photos, etc.)
